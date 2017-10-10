@@ -1,0 +1,20 @@
+.album {
+    .ctn-products {
+        .item-product {
+            margin: 0;
+            .wrp-item {
+                &:hover {
+                    img {
+                        transform: scale(4, 4);
+                    }
+                    .hover-view {
+                        opacity: 1;
+                    }
+                }
+                .img-product {
+                    padding-top: 75%;
+                }
+            }
+        }
+    }
+}

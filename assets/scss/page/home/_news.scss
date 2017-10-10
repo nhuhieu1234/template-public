@@ -1,0 +1,33 @@
+#news {
+    background: url('../img/background/bg10.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    .ctn-products {
+        .item-product {
+            transition: .3s ease-in-out;
+            &:hover {
+                border-color: $color-main;
+                .img {
+                    transform: scale(4, 4) !important;
+                }
+                .hover-view {
+                    opacity: 1;
+                }
+            }
+            @include breakpoint(small-tablet) {
+                border: none;
+            }
+            .wrp-item {
+
+
+
+                .img-product {
+                    padding-top: 90%;
+                    .img {}
+                    .hover-view {}
+                }
+                .ctn-product {}
+            }
+        }
+    }
+}
