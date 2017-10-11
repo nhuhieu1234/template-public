@@ -3,6 +3,7 @@
         .item-product {
             margin: 0;
             .wrp-item {
+                box-shadow: 2px 2px 3px -1px #9f9f9f;
                 &:hover {
                     img {
                         transform: scale(4, 4);

@@ -11,13 +11,12 @@ $(document).on('ready', function() {
         speed: 1000,
         // fade: true,
         cssEase: 'linear'
-     });
+    });
     $('.slider-other').slick({
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 4,
-        responsive: [
-            {
+        responsive: [{
                 breakpoint: 1199,
                 settings: {
                     slidesToShow: 3,
@@ -32,7 +31,30 @@ $(document).on('ready', function() {
                     slidesToShow: 2,
                     slidesToScroll: 2
                 }
-            }         
+            }
         ]
     });
 });
+$(document).ready(function() {
+    var options = {
+        max_value: 5,
+        step_size: 1,
+        update_input_field_name: $("#input-rate"),
+    }
+    $(".rating").rate(options);
+});
+
+function initMap() {
+    var myLatLng = { lat: 16.0586339, lng: 108.21326840000006 };
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 16,
+        center: myLatLng
+    });
+
+    var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'Hello World!'
+    });
+}
