@@ -71,15 +71,13 @@ table {
   src: url("../fonts/OpenSans-Semibold.ttf") format("truetype"); }
 
 .active-menu {
-  border-top-color: #f6b121 !important; }
-  @media (max-width: 767px) {
-    .active-menu {
-      background: #f6b121 !important; } }
-
-.active {
   background: #f6b121; }
-  .active a {
+  .active-menu a {
     color: #fff; }
+
+.active-breadcrumb {
+  color: #fff;
+  font-weight: bold; }
 
 .btn-bg {
   border-radius: 2px;
@@ -1343,7 +1341,7 @@ body {
   background-size: cover; }
   .user-profile .ctn-user .item-ctn .wrp {
     background: rgba(255, 255, 255, 0.1);
-    padding: 15px;
+    padding: 20px 15px;
     border: 1px solid #c2c2c2;
     -webkit-box-shadow: 3px 2px 7px 0px;
     box-shadow: 3px 2px 5px -2px; }
@@ -1352,6 +1350,27 @@ body {
         border: 0;
         -webkit-box-shadow: none;
         box-shadow: none; } }
+  .user-profile .ctn-user .help-block {
+    color: #f9a7a5; }
+  .user-profile .ctn-user .edit {
+    margin: 0; }
+  .user-profile .ctn-user .upload {
+    text-align: center;
+    margin-top: 15px; }
+    .user-profile .ctn-user .upload .btn {
+      color: #f6b121;
+      border: 1px solid #f6b121; }
+      .user-profile .ctn-user .upload .btn:hover {
+        -webkit-transition: .3s ease;
+        transition: .3s ease;
+        color: #fff;
+        background: #f6b121; }
+      @media (max-width: 767px) {
+        .user-profile .ctn-user .upload .btn {
+          font-size: 13px; } }
+      .user-profile .ctn-user .upload .btn input {
+        background: transparent;
+        border: 0; }
   @media (max-width: 991px) {
     .user-profile .ctn-user .avatar-features {
       margin-bottom: 5%; } }
@@ -1371,6 +1390,7 @@ body {
     border: 4px solid #c2c2c2;
     width: 124px; }
     .user-profile .ctn-user .avatar-features .form-avatar .avatar .img:hover .edit-avatar {
+      -webkit-transition: .3s ease;
       transition: .3s ease;
       opacity: 1; }
     .user-profile .ctn-user .avatar-features .form-avatar .avatar .img img {
@@ -1391,6 +1411,7 @@ body {
         width: 50%;
         top: 50%;
         left: 50%;
+        -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         text-align: center; }
         .user-profile .ctn-user .avatar-features .form-avatar .avatar .img .edit-avatar .file input {
@@ -1401,10 +1422,7 @@ body {
           right: 0;
           top: 0; }
   .user-profile .ctn-user .avatar-features .features {
-    margin-top: 8%; }
-    @media (max-width: 991px) {
-      .user-profile .ctn-user .avatar-features .features {
-        margin-top: 5%; } }
+    margin-top: 25px; }
     @media (max-width: 991px) {
       .user-profile .ctn-user .avatar-features .features nav {
         text-align: center; } }
@@ -1419,7 +1437,7 @@ body {
         float: left; } }
     @media (max-width: 599px) {
       .user-profile .ctn-user .avatar-features .features nav ul li {
-        width: 50%;
+        width: 33.333333%;
         font-size: 14px; } }
     .user-profile .ctn-user .avatar-features .features nav ul li a,
     .user-profile .ctn-user .avatar-features .features nav ul li i {
@@ -1430,8 +1448,18 @@ body {
         -webkit-transition: .2s ease-in-out;
         transition: .2s ease-in-out;
         background: #f6b121 !important; }
+      @media (max-width: 599px) {
+        .user-profile .ctn-user .avatar-features .features nav ul li a {
+          font-size: 0; } }
       .user-profile .ctn-user .avatar-features .features nav ul li a i {
-        padding-right: 5px; }
+        padding-right: 10px; }
+        @media (max-width: 599px) {
+          .user-profile .ctn-user .avatar-features .features nav ul li a i {
+            padding: 0;
+            font-size: 13px; } }
+  @media (max-width: 991px) {
+    .user-profile .ctn-user .user-infor {
+      margin-top: 3%; } }
   .user-profile .ctn-user .user-infor .form-infor label {
     font-weight: bold; }
     @media (max-width: 767px) {
@@ -1467,10 +1495,16 @@ body {
   @media (max-width: 767px) {
     .user-profile .ctn-user .user-infor .form-infor .username .show-username {
       float: left; } }
-  .user-profile .ctn-user .edit {
-    margin: 0; }
-  .user-profile .ctn-user .help-block {
-    color: #f9a7a5; }
+  .user-profile .ctn-user .user-saved .wrp {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    box-shadow: none; }
+    .user-profile .ctn-user .user-saved .wrp .ctn-products .item-product {
+      padding: 0 15px;
+      display: inline-block !important; }
+      .user-profile .ctn-user .user-saved .wrp .ctn-products .item-product .wrp-item .img-product {
+        padding-top: 70%; }
 
 .contact .ctn-contact {
   text-align: center; }

@@ -1,15 +1,19 @@
 .active-menu {
-    border-top-color: $color-hover !important;
-    @include breakpoint(small-tablet) {
-        background: $color-hover !important;
-    }
-}
-.active {
+    // border-top-color: $color-hover !important;
+    // @include breakpoint(small-tablet) {
+    //     background: $color-hover !important;
+    // }
     background: $color-hover;
     a {
         color: $color-white;
     }
 }
+
+.active-breadcrumb {
+    color: $color-white;
+    font-weight: bold;
+}
+
 .btn-bg {
     border-radius: 2px;
     background: $color-orange2;
@@ -55,11 +59,13 @@
         }
     }
 }
+
 .wrapper-content {
     // padding-top: 60px;
     // padding-bottom: 4%;
     padding: 4% 0;
 }
+
 .ctn-main {
     margin: 2% 0;
 }

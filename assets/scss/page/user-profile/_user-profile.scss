@@ -7,7 +7,7 @@
             .wrp {
                 // background: $color-white;
                 background: rgba(255, 255, 255, 0.1);
-                padding: 15px;
+                padding: 20px 15px;
                 border: 1px solid $color-gray;
                 -webkit-box-shadow: 3px 2px 7px 0px;
                 box-shadow: 3px 2px 5px -2px;
@@ -15,6 +15,33 @@
                     border: 0;
                     -webkit-box-shadow: none;
                     box-shadow: none;
+                }
+            }
+        }
+        .help-block {
+            color: #f9a7a5;
+        }
+        .edit {
+            margin: 0;
+        }
+        .upload {
+            text-align: center;
+            margin-top: 15px;
+            .btn {
+                color: $color-hover;
+                border: 1px solid $color-hover;
+                &:hover {
+                    -webkit-transition: .3s ease;
+                    transition: .3s ease;
+                    color: $color-white;
+                    background: $color-hover;
+                }
+                @include breakpoint (small-tablet) {
+                    font-size: 13px;
+                }
+                input {
+                    background: transparent;
+                    border: 0;
                 }
             }
         }
@@ -43,6 +70,7 @@
                         width: 124px;
                         &:hover {
                             .edit-avatar {
+                                -webkit-transition: .3s ease;
                                 transition: .3s ease;
                                 opacity: 1;
                             }
@@ -67,6 +95,7 @@
                                 width: 50%;
                                 top: 50%;
                                 left: 50%;
+                                -webkit-transform: translate(-50%, -50%);
                                 transform: translate(-50%, -50%);
                                 text-align: center;
                                 input {
@@ -79,45 +108,11 @@
                                 }
                             }
                         }
-                    } // .edit-avatar {
-                    //     text-align: center;
-                    //     .file {
-                    //         border: 2px solid $color-hover;
-                    //         color: $color-hover;
-                    //         position: relative;
-                    //         overflow: hidden;
-                    //         padding: 7px 0;
-                    //         font-size: 14px;
-                    //         width: 50%;
-                    //         margin: 10px auto;
-                    //         &:hover {
-                    //             -webkit-transition: .2s ease-in-out;
-                    //             transition: .2s ease-in-out;
-                    //             background: $color-hover;
-                    //             color: $color-white !important;
-                    //         }
-                    //         @include breakpoint (tablet) {
-                    //             width: 30%;
-                    //         }
-                    //         i {
-                    //             padding-right: 2%;
-                    //         }
-                    //         input {
-                    //             position: absolute;
-                    //             font-size: 50px;
-                    //             opacity: 0;
-                    //             right: 0;
-                    //             top: 0;
-                    //         }
-                    //     }
-                    // }
+                    }
                 }
             }
             .features {
-                margin-top: 8%;
-                @include breakpoint (tablet) {
-                    margin-top: 5%;
-                }
+                margin-top: 25px;
                 nav {
                     @include breakpoint (tablet) {
                         text-align: center;
@@ -134,7 +129,7 @@
                                 float: left;
                             }
                             @include breakpoint (phone) {
-                                width: 50%;
+                                width: 33.333333%;
                                 font-size: 14px;
                             }
 
@@ -149,8 +144,15 @@
                                     transition: .2s ease-in-out;
                                     background: $color-hover !important;
                                 }
+                                @include breakpoint (phone) {
+                                    font-size: 0;
+                                }
                                 i {
-                                    padding-right: 5px;
+                                    padding-right: 10px;
+                                    @include breakpoint (phone) {
+                                        padding: 0;
+                                        font-size: 13px;
+                                    }
                                 }
                             }
                         }
@@ -158,69 +160,8 @@
                 }
             }
         }
-        .user-infor {
-            .form-infor {
-                label {
-                    font-weight: bold;
-                    @include breakpoint (small-tablet) {
-                        margin-bottom: 1.5%;
-                    }
-                }
-                .form-control,
-                label,
-                input,
-                p,
-                h4 {
-                    color: $color-white;
-                    &::placeholder {
-                        color: $color-white;
-                        opacity: 0.5;
-                    }
-                }
-                .name {
-                    label {
-                        @include breakpoint (small-tablet) {
-                            display: none;
-                        }
-                    }
-                    .show-name {
-                        h4 {
-                            font-size: 20px;
-                            font-weight: bold;
-                        }
-                        @include breakpoint (small-tablet) {
-                            width: 100%;
-                            text-align: center;
-                            color: $color-main;
-                        }
-                    }
-                }
-                .username {
-                    label {
-                        @include breakpoint (small-tablet) {
-                            float: left;
-                        }
-                    }
-                    .show-username {
-
-                        @include breakpoint (small-tablet) {
-                            float: left;
-                        }
-                    }
-                }
-                .first-name {}
-                .last-name {}
-                .email {}
-                .pass {}
-                .new-pass {}
-                .confirm-pass {}
-            }
-        }
-        .edit {
-            margin: 0;
-        }
-        .help-block {
-            color: #f9a7a5;
-        }
+        @import "page/user-profile/user-infor";
+        @import "page/user-profile/edit-pass";
+        @import "page/user-profile/user-saved";
     }
 }
