@@ -1,14 +1,13 @@
 .information {
     padding-bottom: 3%;
     .infor-main {
-        .wrp {}
         .image {
 
             @include breakpoint (mid-phone) {
                 padding: 0;
             }
             .wrp {
-                // box-shadow: 2px 2px 3px -1px $color-gray4;
+                /* box-shadow: 2px 2px 3px -1px $color-gray4;*/
                 position: relative;
                 height: 275px;
                 background: black;
@@ -21,17 +20,16 @@
                     top: 0;
                     left: 0;
                     width: 100%;
+                    -webkit-transform: scale(1, 1);
                     transform: scale(1, 1);
                     @include breakpoint (small-tablet) {
+                        -webkit-transform: scale(1.5, 1.5);
                         transform: scale(1.5, 1.5);
                     }
                 }
             }
         }
         .ctn {
-            // @include breakpoint (mid-phone) {
-            //     padding-right: 0;
-            // }
             .item {
                 i {
                     padding-right: 1.5%;
@@ -49,7 +47,7 @@
                     float: left;
                     margin-right: 2%;
                     p {
-                        // box-shadow: 2px 2px 3px -1px $color-gray4;
+                        /* box-shadow: 2px 2px 3px -1px $color-gray4;*/
                         color: $color-white;
                         background: $color-green;
                         text-align: center;
@@ -92,6 +90,7 @@
                     float: left;
                     padding-right: 3%;
                     .btn {
+                        -webkit-box-shadow: 2px 2px 3px -1px $color-gray4;
                         box-shadow: 2px 2px 3px -1px $color-gray4;
                         @include breakpoint (phone) {
                             font-size: 13px;

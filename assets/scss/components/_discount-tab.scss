@@ -6,10 +6,8 @@
     background: url(../img/icon/sale-tab.png) no-repeat;
     background-position: center;
     background-size: 100%;
-    width: 60px; // padding-top: 30%;
-    height: 78px; // @include breakpoint (small-desktop) {
-    //     padding-top: 37%;
-    // }
+    width: 60px;
+    height: 78px;
     @include breakpoint (small-tablet) {
         width: 42px;
         height: 56px;

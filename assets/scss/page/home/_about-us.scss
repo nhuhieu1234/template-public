@@ -1,54 +1,9 @@
-// #aboutUs {
-//     .ctn-about {
-//         p {
-//             margin: 0;
-//             text-align: center;
-//             font-size: 20px; // padding: 0 12%;
-//             @include breakpoint(tablet) {
-//                 font-size: 16px;
-//             }
-//             @include breakpoint(phone) {
-//                 font-size: 14px;
-//             }
-//             @include breakpoint(mid-phone) {
-//                 font-size: 12px;
-//             }
-//         }
-//         .item {
-//             width: 20%;
-//             float: left;
-//             padding: 0 15px;
-//             .wrp-item {
-//                 position: relative;
-//                 background: red;
-//                 .img-item {
-//                     border-radius: 50%;
-//                     overflow: hidden;
-//                     position: absolute;
-//                     height: 0;
-//                 padding-top: 204px;
-//                     top: 0;
-//                     left: 0;
-//                 }
-//                 img {
-//                     width: 100%;
-//                     transform: scale(1, 1);
-//                 }
-//             } // height: 0;
-//             // padding-top: 50%;
-//             // background: url(../img/about-us/h1.jpg) no-repeat;
-//             // background-position: center;
-//             // background-size: cover;
-//             // border-radius: 50%;
-//         }
-//         .ctn-product {}
-//     }
-// }
 #aboutUs {
     .img-product {
         border-radius: 50%;
         .img {
-            transform: scale(1, 1);
+            -webkit-transform: scale(1, 1);
+                    transform: scale(1, 1);
         }
     }
     .class-three {

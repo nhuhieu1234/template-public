@@ -4,10 +4,12 @@
     background-size: cover;
     .ctn-products {
         .item-product {
+            -webkit-transition: .3s ease-in-out;
             transition: .3s ease-in-out;
             &:hover {
                 border-color: $color-main;
                 .img {
+                    -webkit-transform: scale(4, 4) !important;
                     transform: scale(4, 4) !important;
                 }
                 .hover-view {

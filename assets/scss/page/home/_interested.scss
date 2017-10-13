@@ -6,21 +6,19 @@
         .item-product {
             .wrp-item {
                 .img-product {
-                    box-shadow: 3px 2px 7px 0px;
+                    -webkit-box-shadow: 3px 2px 7px 0px;
+                            box-shadow: 3px 2px 7px 0px;
                     &:hover {
                         .img {
-                            transform: scale(4, 4) !important;
+                            -webkit-transform: scale(4, 4) !important;
+                                    transform: scale(4, 4) !important;
                         }
                         .hover-view {
                             opacity: 1;
                         }
                     }
-                    .img {
-                     
-                    }
-                    .hover-view {
-                        
-                    }
+                    .img {}
+                    .hover-view {}
                 }
                 .ctn-product {
                     position: absolute;
@@ -28,7 +26,8 @@
                     right: 5px;
                     bottom: -10%;
                     border: 5px solid #d0963e;
-                    box-shadow: 0px 0px 10px 1px;
+                    -webkit-box-shadow: 0px 0px 10px 1px;
+                            box-shadow: 0px 0px 10px 1px;
                     @include breakpoint(small-tablet) {
                         left: 0;
                         right: 0;

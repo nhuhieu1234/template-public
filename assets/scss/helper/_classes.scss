@@ -4,7 +4,12 @@
         background: $color-hover !important;
     }
 }
-
+.active {
+    background: $color-hover;
+    a {
+        color: $color-white;
+    }
+}
 .btn-bg {
     border-radius: 2px;
     background: $color-orange2;

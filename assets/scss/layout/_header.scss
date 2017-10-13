@@ -16,7 +16,7 @@
                 position: relative;
                 height: 0;
                 overflow: hidden;
-                padding-top: 60px; // width: 70%;
+                padding-top: 60px;
                 width: 48%;
                 @include breakpoint (small-desktop) {
                     width: 50%;
@@ -184,9 +184,6 @@
             @include breakpoint (small-tablet) {
                 position: unset;
             }
-            // &+ .products.container {
-            //     padding-top: 20px;
-            // }
         }
         .nav {
             li {

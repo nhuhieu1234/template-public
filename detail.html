@@ -135,6 +135,35 @@
                                                         <a href="" class="btn btn-bg" data-toggle="modal" data-target="#modal-rating">Rate</a>
                                                     </div>
                                                 </div>
+                                                <div id="modal-rating" class="modal fade" role="dialog">
+                                                    <div class="modal-dialog">
+                                                        <!-- Modal content-->
+                                                        <div class="modal-content content">
+                                                            <div class="wrp-ctn">
+                                                                <div class="modal-header">
+                                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                                    <h4 class="modal-title">Rating</h4>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <form role="form" name="form-rate" id="form-rate" class="form-horizontal" enctype="multipart/form-data" method="POST">
+                                                                        <div class="col-md-12">
+                                                                            <div class="form-group item">
+                                                                                <div class="rating"></div>
+                                                                                <input id="input-rate" type="text">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-12">
+                                                                            <div class="form-group button-action">
+                                                                                <input type="submit" class=" btn btn-bg" value="Send" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="clearfix"></div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                                 <div class="clearfix"></div>
                                             </form>
                                         </div>
@@ -392,7 +421,7 @@
                                     </div>
                                     <div class="media-body">
                                         <h4 class="media-heading">Hieu Tran <small><i>Posted on February 19, 2016</i></small></h4>
-                                        <form action="">
+                                        <form action="" class="form-border-color">
                                             <div class="form-group">
                                                 <textarea class="form-control" rows="3" id="cmt"></textarea>
                                             </div>
@@ -596,35 +625,6 @@
                                     <div class="col-md-12">
                                         <div class="form-group button-action">
                                             <input type="submit" class=" btn btn-bg" value="Search" />
-                                        </div>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="modal-rating" class="modal fade" role="dialog">
-                <div class="modal-dialog">
-                    <!-- Modal content-->
-                    <div class="modal-content content">
-                        <div class="wrp-ctn">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                <h4 class="modal-title">Rating</h4>
-                            </div>
-                            <div class="modal-body">
-                                <form role="form" name="form-rate" id="form-rate" class="form-horizontal" enctype="multipart/form-data" method="POST">
-                                    <div class="col-md-12">
-                                        <div class="form-group item">
-                                            <div class="rating"></div>
-                                            <input id="input-rate" type="text">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group button-action">
-                                            <input type="submit" class=" btn btn-bg" value="Send" />
                                         </div>
                                     </div>
                                     <div class="clearfix"></div>

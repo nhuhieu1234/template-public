@@ -10,17 +10,17 @@
             padding: 10px 15px;
         }
         li {
-            @include breakpoint (small-tablet) { 
+            @include breakpoint (small-tablet) {
                 font-size: 14px;
             }
-            @include breakpoint (mid-phone) { 
+            @include breakpoint (mid-phone) {
                 font-size: 13px;
             }
         }
         a {
             color: $color-white;
             &:hover {
-            	text-decoration: underline;
+                text-decoration: underline;
             }
         }
     }
@@ -28,7 +28,7 @@
         color: $color-white;
     }
     .active {
-    	color: $color-white;
-    	font-weight: bold;
+        color: $color-white;
+        font-weight: bold;
     }
 }

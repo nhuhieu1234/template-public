@@ -15,6 +15,7 @@
 @import "components/discount-tab";
 @import "components/pagination-tab";
 @import "components/view-more";
+@import "components/form-border-color";
 
 //Import layout
 @import "layout/global";
@@ -27,6 +28,9 @@
 //Import page
 @import "page/home/home";
 @import "page/detail/detail";
+
+@import "page/user-profile/user-profile";
+@import "page/user-profile/edit-pass";
 @import "page/contact";
 
 

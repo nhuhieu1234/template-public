@@ -1,0 +1,226 @@
+.user-profile {
+    background: url('../img/background/bg10.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    .ctn-user {
+        .item-ctn {
+            .wrp {
+                // background: $color-white;
+                background: rgba(255, 255, 255, 0.1);
+                padding: 15px;
+                border: 1px solid $color-gray;
+                -webkit-box-shadow: 3px 2px 7px 0px;
+                box-shadow: 3px 2px 5px -2px;
+                @include breakpoint (tablet) {
+                    border: 0;
+                    -webkit-box-shadow: none;
+                    box-shadow: none;
+                }
+            }
+        }
+        .avatar-features {
+            @include breakpoint (tablet) {
+                margin-bottom: 5%;
+            }
+            @include breakpoint (tablet) {
+                margin: 0;
+            }
+            .wrp {
+                @include breakpoint (tablet) {
+                    background: transparent;
+                }
+            }
+            .form-avatar {
+                .avatar {
+                    .img {
+                        cursor: pointer;
+                        position: relative;
+                        border-radius: 50%;
+                        height: 124px;
+                        overflow: hidden;
+                        margin: 0 auto;
+                        border: 4px solid #c2c2c2;
+                        width: 124px;
+                        &:hover {
+                            .edit-avatar {
+                                transition: .3s ease;
+                                opacity: 1;
+                            }
+                        }
+                        img {
+                            width: 100%;
+                        }
+
+                        .edit-avatar {
+                            opacity: 0;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            background: rgba(0, 0, 0, 0.7);
+                            .file {
+                                color: $color-white;
+                                position: relative;
+                                overflow: hidden;
+                                font-size: 14px;
+                                width: 50%;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                text-align: center;
+                                input {
+                                    cursor: pointer;
+                                    position: absolute;
+                                    font-size: 50px;
+                                    opacity: 0;
+                                    right: 0;
+                                    top: 0;
+                                }
+                            }
+                        }
+                    } // .edit-avatar {
+                    //     text-align: center;
+                    //     .file {
+                    //         border: 2px solid $color-hover;
+                    //         color: $color-hover;
+                    //         position: relative;
+                    //         overflow: hidden;
+                    //         padding: 7px 0;
+                    //         font-size: 14px;
+                    //         width: 50%;
+                    //         margin: 10px auto;
+                    //         &:hover {
+                    //             -webkit-transition: .2s ease-in-out;
+                    //             transition: .2s ease-in-out;
+                    //             background: $color-hover;
+                    //             color: $color-white !important;
+                    //         }
+                    //         @include breakpoint (tablet) {
+                    //             width: 30%;
+                    //         }
+                    //         i {
+                    //             padding-right: 2%;
+                    //         }
+                    //         input {
+                    //             position: absolute;
+                    //             font-size: 50px;
+                    //             opacity: 0;
+                    //             right: 0;
+                    //             top: 0;
+                    //         }
+                    //     }
+                    // }
+                }
+            }
+            .features {
+                margin-top: 8%;
+                @include breakpoint (tablet) {
+                    margin-top: 5%;
+                }
+                nav {
+                    @include breakpoint (tablet) {
+                        text-align: center;
+                    }
+                    ul {
+                        @include breakpoint (tablet) {
+                            display: inline-block;
+                        }
+                        @include breakpoint (phone) {
+                            width: 100%;
+                        }
+                        li {
+                            @include breakpoint (tablet) {
+                                float: left;
+                            }
+                            @include breakpoint (phone) {
+                                width: 50%;
+                                font-size: 14px;
+                            }
+
+                            a,
+                            i {
+                                color: $color-white !important;
+                            }
+                            a {
+                                border-radius: 0 !important;
+                                &:hover {
+                                    -webkit-transition: .2s ease-in-out;
+                                    transition: .2s ease-in-out;
+                                    background: $color-hover !important;
+                                }
+                                i {
+                                    padding-right: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .user-infor {
+            .form-infor {
+                label {
+                    font-weight: bold;
+                    @include breakpoint (small-tablet) {
+                        margin-bottom: 1.5%;
+                    }
+                }
+                .form-control,
+                label,
+                input,
+                p,
+                h4 {
+                    color: $color-white;
+                    &::placeholder {
+                        color: $color-white;
+                        opacity: 0.5;
+                    }
+                }
+                .name {
+                    label {
+                        @include breakpoint (small-tablet) {
+                            display: none;
+                        }
+                    }
+                    .show-name {
+                        h4 {
+                            font-size: 20px;
+                            font-weight: bold;
+                        }
+                        @include breakpoint (small-tablet) {
+                            width: 100%;
+                            text-align: center;
+                            color: $color-main;
+                        }
+                    }
+                }
+                .username {
+                    label {
+                        @include breakpoint (small-tablet) {
+                            float: left;
+                        }
+                    }
+                    .show-username {
+
+                        @include breakpoint (small-tablet) {
+                            float: left;
+                        }
+                    }
+                }
+                .first-name {}
+                .last-name {}
+                .email {}
+                .pass {}
+                .new-pass {}
+                .confirm-pass {}
+            }
+        }
+        .edit {
+            margin: 0;
+        }
+        .help-block {
+            color: #f9a7a5;
+        }
+    }
+}

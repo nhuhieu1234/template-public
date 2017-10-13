@@ -2,6 +2,9 @@ body {
     font-family: $openSans-regular !important;
     color: $color-gray3;
     position: relative;
+    a {
+        color: $color-gray3;
+    }
     .wrapper {
         input,
         select,
@@ -23,12 +26,9 @@ body {
             }
         }
         #content {
-        	@include breakpoint (small-tablet) {
-		        padding-top: 60px;
-		    }
+            @include breakpoint (small-tablet) {
+                padding-top: 60px;
+            }
         }
-    } // .affix ~ .products {
-    // 	position: relative;
-    // 	top: 60px;
-    // }
+    }
 }
