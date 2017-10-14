@@ -1,13 +1,17 @@
 .advanced-search {
     .features {
         margin: 0 !important;
-        .item {
-
-        }
+        .item {}
         .item-three {
             @include breakpoint (tablet) {
                 width: 33.33333% !important;
                 float: left;
+                .wrp-item {
+                    // border: 1px solid transparent;
+                }
+            }
+            ul {
+                min-width: 100%;
             }
         }
         .input-address {
@@ -45,11 +49,19 @@
                 border: 0;
             }
         }
-        .city, .type {
-        	button {
-        		background: $color-white;
-        	}
+        .city,
+        .type {
+            button {
+                background: $color-white;
+            }
+        }
+        .city {
+            .form-group {
+                @include breakpoint (tablet) {
+                    border-right: 1px solid #e6e2e2;
+                }
+            }
         }
     }
-    .products {}
+    
 }
