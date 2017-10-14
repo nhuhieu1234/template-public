@@ -42,7 +42,13 @@ $(document).ready(function() {
         update_input_field_name: $("#input-rate"),
     }
     $(".rating").rate(options);
+
+    // var ddSearch = $(".dropdown-search .dropdown-toggle").html();
+    // console.log (ddSearch);
+
 });
+
+
 
 function initMap() {
     var myLatLng = { lat: 16.0586339, lng: 108.21326840000006 };

@@ -1559,3 +1559,40 @@ body {
     padding-top: 1%; }
   .contact .ctn-contact .message .ctn-mess textarea {
     resize: none; }
+
+.advanced-search .features {
+  margin: 0 !important;
+  /* select {
+            option {
+                background: $color-hover !important;
+                &:hover {
+                    background: $color-hover !important;
+                }
+            }
+        }*/
+  /*select>option:hover {
+            background: yellow !important;
+            cursor: pointer;
+        }*/ }
+  @media (max-width: 991px) {
+    .advanced-search .features .item-three {
+      width: 33.33333% !important;
+      float: left; } }
+  .advanced-search .features .input-address input {
+    text-align: center; }
+  @media (max-width: 991px) {
+    .advanced-search .features .input-address {
+      width: 100% !important; } }
+  .advanced-search .features .btn {
+    width: 100%; }
+  .advanced-search .features .dropdown {
+    text-align: left; }
+    .advanced-search .features .dropdown .btn {
+      /*text-align: left;*/ }
+    .advanced-search .features .dropdown .dropdown-menu {
+      width: 100%;
+      border-radius: 0;
+      margin: 0;
+      border: 0; }
+  .advanced-search .features .city button, .advanced-search .features .type button {
+    background: #fff; }
