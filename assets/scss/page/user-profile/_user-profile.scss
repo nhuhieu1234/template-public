@@ -97,6 +97,7 @@
                                 left: 0;
                                 bottom: 0;
                                 right: 0;
+                                cursor: pointer;
                                 i {
                                     position: absolute;
                                     top: 50%;
@@ -105,7 +106,6 @@
                                     transform: translate(-50%, -50%);
                                 }
                                 input {
-                                    cursor: pointer;
                                     position: absolute;
                                     font-size: 50px;
                                     opacity: 0;

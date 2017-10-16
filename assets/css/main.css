@@ -487,8 +487,7 @@ body {
   color: #7d7d7d;
   position: relative; }
   body a {
-    color: #7d7d7d;
-    text-decoration: none; }
+    color: #7d7d7d; }
   body a:focus,
   body button:focus,
   body input:focus {
@@ -498,10 +497,12 @@ body {
   body .wrapper button,
   body .wrapper .btn {
     border-radius: 0; }
-  body .wrapper a:hover i {
-    color: #f6b121 !important; }
-  body .wrapper a:focus i {
-    color: #f6b121 !important; }
+  body .wrapper a {
+    text-decoration: none; }
+    body .wrapper a:hover i {
+      color: #f6b121 !important; }
+    body .wrapper a:focus i {
+      color: #f6b121 !important; }
   @media (max-width: 767px) {
     body .wrapper #content {
       padding-top: 60px; } }
@@ -1414,7 +1415,8 @@ body {
         top: 0;
         left: 0;
         bottom: 0;
-        right: 0; }
+        right: 0;
+        cursor: pointer; }
         .user-profile .ctn-user .avatar-features .form-avatar .avatar .img .edit-avatar .file i {
           position: absolute;
           top: 50%;
@@ -1422,7 +1424,6 @@ body {
           -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
         .user-profile .ctn-user .avatar-features .form-avatar .avatar .img .edit-avatar .file input {
-          cursor: pointer;
           position: absolute;
           font-size: 50px;
           opacity: 0;
