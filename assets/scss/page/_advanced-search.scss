@@ -6,48 +6,18 @@
             @include breakpoint (tablet) {
                 width: 33.33333% !important;
                 float: left;
-                .wrp-item {
-                    // border: 1px solid transparent;
-                }
             }
             ul {
                 min-width: 100%;
             }
         }
         .input-address {
-            input {
-                text-align: center;
-            }
             @include breakpoint (tablet) {
                 width: 100% !important;
             }
         }
-        /* select {
-            option {
-                background: $color-hover !important;
-                &:hover {
-                    background: $color-hover !important;
-                }
-            }
-        }*/
-        /*select>option:hover {
-            background: yellow !important;
-            cursor: pointer;
-        }*/
         .btn {
             width: 100%;
-        }
-        .dropdown {
-            text-align: left;
-            .btn {
-                /*text-align: left;*/
-            }
-            .dropdown-menu {
-                width: 100%;
-                border-radius: 0;
-                margin: 0;
-                border: 0;
-            }
         }
         .city,
         .type {
@@ -57,11 +27,17 @@
         }
         .city {
             .form-group {
-                @include breakpoint (tablet) {
-                    border-right: 1px solid #e6e2e2;
+                select {
+                    @include breakpoint (tablet) {
+                        border-color: transparent;
+                    }
                 }
             }
         }
+        .button-search {
+            input {
+                border: 1px solid $color-hover;
+            }
+        }
     }
-    
 }
