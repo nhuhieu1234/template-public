@@ -70,9 +70,9 @@ table {
   font-family: 'OpenSans Semibold';
   src: url("../fonts/OpenSans-Semibold.ttf") format("truetype"); }
 
-.active-menu {
+.active {
   background: #f6b121; }
-  .active-menu a {
+  .active a {
     color: #fff; }
 
 .active-breadcrumb {
@@ -487,18 +487,21 @@ body {
   color: #7d7d7d;
   position: relative; }
   body a {
-    color: #7d7d7d; }
+    color: #7d7d7d;
+    text-decoration: none; }
+  body a:focus,
+  body button:focus,
+  body input:focus {
+    outline: none !important; }
   body .wrapper input,
   body .wrapper select,
   body .wrapper button,
   body .wrapper .btn {
     border-radius: 0; }
-  body .wrapper a {
-    text-decoration: none; }
-    body .wrapper a:hover i {
-      color: #f6b121 !important; }
-    body .wrapper a:focus i {
-      color: #f6b121 !important; }
+  body .wrapper a:hover i {
+    color: #f6b121 !important; }
+  body .wrapper a:focus i {
+    color: #f6b121 !important; }
   @media (max-width: 767px) {
     body .wrapper #content {
       padding-top: 60px; } }
@@ -1404,22 +1407,29 @@ body {
       background: rgba(0, 0, 0, 0.7); }
       .user-profile .ctn-user .avatar-features .form-avatar .avatar .img .edit-avatar .file {
         color: #fff;
-        position: relative;
+        position: absolute;
         overflow: hidden;
         font-size: 14px;
-        width: 50%;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        text-align: center; }
+        width: 100%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0; }
+        .user-profile .ctn-user .avatar-features .form-avatar .avatar .img .edit-avatar .file i {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
         .user-profile .ctn-user .avatar-features .form-avatar .avatar .img .edit-avatar .file input {
           cursor: pointer;
           position: absolute;
           font-size: 50px;
           opacity: 0;
           right: 0;
-          top: 0; }
+          top: 0;
+          bottom: 0;
+          left: 0; }
   .user-profile .ctn-user .avatar-features .features {
     margin-top: 25px; }
     @media (max-width: 991px) {

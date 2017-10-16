@@ -4,6 +4,14 @@ body {
     position: relative;
     a {
         color: $color-gray3;
+        text-decoration: none;
+    }
+    a,
+    button,
+    input {
+        &:focus {
+            outline: none !important;
+        }
     }
     .wrapper {
         input,
@@ -13,7 +21,6 @@ body {
             border-radius: 0;
         }
         a {
-            text-decoration: none;
             &:hover {
                 i {
                     color: $color-hover !important;
