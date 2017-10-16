@@ -1,4 +1,22 @@
 @charset "UTF-8";
+.no-js #loader {
+  display: none; }
+
+.js #loader {
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 0; }
+
+.se-pre-con {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(../img/loader/food-loader4.gif) center no-repeat #fff; }
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain) 22
@@ -252,7 +270,7 @@ table {
       display: none !important; } }
 
 .slide-ad .slick-prev {
-  background: url("../img/icon/pre-4.png") no-repeat center !important;
+  background: url("../img/icon/pre.png") no-repeat center !important;
   background-size: 40px !important;
   left: 3%;
   background-color: rgba(255, 255, 255, 0.5) !important;
@@ -271,7 +289,7 @@ table {
       background-size: 20px !important; } }
 
 .slide-ad .slick-next {
-  background: url("../img/icon/next-4.png") no-repeat center !important;
+  background: url("../img/icon/next.png") no-repeat center !important;
   background-size: 40px !important;
   right: 3%;
   background-color: rgba(255, 255, 255, 0.5) !important;
@@ -378,13 +396,13 @@ table {
       .slider-other .slick-next {
         display: none !important; } }
   .slider-other .slick-prev {
-    background: url("../img/icon/pre-4.png") no-repeat center !important;
+    background: url("../img/icon/pre-2.png") no-repeat center !important;
     background-size: 17px !important;
     left: 3%;
     background-color: rgba(0, 0, 0, 0.5) !important;
     border-radius: 50% !important; }
   .slider-other .slick-next {
-    background: url("../img/icon/next-4.png") no-repeat center !important;
+    background: url("../img/icon/next-2.png") no-repeat center !important;
     background-size: 17px !important;
     right: 3%;
     background-color: rgba(0, 0, 0, 0.5) !important;
@@ -746,13 +764,17 @@ body {
           #header .menu-top .top-right .user-features .item-feature a i {
             padding-right: 10px;
             font-size: 0; }
+      #header .menu-top .top-right .user-features .user img {
+        width: 25px;
+        height: 25px;
+        vertical-align: -moz-middle-with-baseline;
+        vertical-align: -webkit-baseline-middle;
+        border-radius: 50%;
+        border: 1px solid transparent;
+        margin-right: 5px; }
       @media (max-width: 767px) {
         #header .menu-top .top-right .user-features .user .btn-user {
-          font-size: 0; }
-          #header .menu-top .top-right .user-features .user .btn-user i {
-            font-size: 15px !important;
-            vertical-align: -moz-middle-with-baseline;
-            vertical-align: -webkit-baseline-middle; } }
+          font-size: 0; } }
       #header .menu-top .top-right .user-features .user .dropdown-menu {
         min-width: 100%;
         border-radius: 2px;

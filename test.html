@@ -15,7 +15,6 @@
 </head>
 
 <body>
-    <div class="se-pre-con"></div>
     <div class="wrapper">
         <header id="header">
             <div class="menu-top">
@@ -38,8 +37,8 @@
                             </div>
                             <div class="user-features col-md-6 col-sm-6 item">
                                 <div class="user dropdown item-feature">
-                                    <img src="assets/img/about-us/h5.jpg" alt="">
                                     <a href="" class="btn-user  dropdown-toggle" data-toggle="dropdown">
+                                        <i class="fa fa-user"></i>
                                         Hieu Tran
                                         <span class="caret"></span>
                                     </a>
@@ -64,12 +63,12 @@
                     <div class="row">
                         <div class="collapse navbar-collapse header-navbar">
                             <ul class="nav navbar-nav ">
-                                <li class="item-menu active"><a href="index.html">home</a></li>
-                                <li class="item-menu"><a href="#interested">interested</a></li>
-                                <li class="item-menu"><a href="#news">news</a></li>
-                                <li class="item-menu"><a href="#aboutUs">about us</a></li>
-                                <li class="item-menu"><a href="contact.html">contact</a></li>
-                                <li class="item-menu"><a href="advanced-search.html">search</a></li>
+                                <li class="item-menu2 active">home</li>
+                                <li class="item-menu2">interested</li>
+                                <li class="item-menu2">news</li>
+                                <li class="item-menu2">about us</li>
+                                <li class="item-menu2">contact</li>
+                                <li class="item-menu2">search</li>
                             </ul>
                         </div>
                     </div>
@@ -905,7 +904,6 @@
     </div>
     <!-- jQuery Library -->
     <script src="assets/js/jquery/jquery.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
     <script src="assets/js/bootstrap/bootstrap.min.js"></script>
     <!--     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
@@ -915,7 +913,12 @@
     <script src="assets/js/rater.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbJTv1mpf9Tm1fWBip0XKIuE1tBcv9GMc&callback=initMap" async defer></script>
-   
+    <script>
+    $('.item-menu2 a').click(function() {
+        $('.item-menu2 a').removeClass("active");
+        $(this).addClass("active");
+    });
+    </script>
 </body>
 </body>
 
