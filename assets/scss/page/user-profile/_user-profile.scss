@@ -92,34 +92,36 @@
                             right: 0;
                             bottom: 0;
                             background: rgba(0, 0, 0, 0.7);
-                            .file {
+                            i {
                                 color: $color-white;
                                 position: absolute;
-                                overflow: hidden;
-                                font-size: 14px;
-                                width: 100%;
-                                top: 0;
-                                left: 0;
-                                bottom: 0;
-                                right: 0;
-                                cursor: pointer;
-                                i {
-                                    position: absolute;
-                                    top: 50%;
-                                    left: 50%;
-                                    -webkit-transform: translate(-50%, -50%);
-                                    transform: translate(-50%, -50%);
-                                }
-                                input {
-                                    position: absolute;
-                                    font-size: 50px;
-                                    opacity: 0;
-                                    right: 0;
-                                    top: 0;
-                                    bottom: 0;
-                                    left: 0;
-                                }
+                                top: 50%;
+                                left: 50%;
+                                -webkit-transform: translate(-50%, -50%);
+                                transform: translate(-50%, -50%);
                             }
+                            // .file {
+                            //     color: $color-white;
+                            //     position: absolute;
+                            //     overflow: hidden;
+                            //     font-size: 14px;
+                            //     width: 100%;
+                            //     top: 0;
+                            //     left: 0;
+                            //     bottom: 0;
+                            //     right: 0;
+                            //     cursor: pointer;
+
+                            //     input {
+                            //         position: absolute;
+                            //         font-size: 50px;
+                            //         opacity: 0;
+                            //         right: 0;
+                            //         top: 0;
+                            //         bottom: 0;
+                            //         left: 0;
+                            //     }
+                            // }
                         }
                     }
                 }

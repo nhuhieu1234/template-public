@@ -66,6 +66,25 @@ $(document).ready(function() {
     //     $('.item-menu').removeClass("active");
     //     $(this).addClass("active");
     // });
+    $('.image-editor').cropit({
+        exportZoom: 1.25,
+        imageBackground: true,
+        imageBackgroundBorderWidth: 20
+    });
+
+    $('.rotate-cw').click(function() {
+        $('.image-editor').cropit('rotateCW');
+    });
+    $('.rotate-ccw').click(function() {
+        $('.image-editor').cropit('rotateCCW');
+    });
+
+    $('.export').click(function() {
+        var imageData = $('.image-editor').cropit('export');
+        // console.log(imageData);
+        window.open(imageData);
+    });
+
 });
 
 
